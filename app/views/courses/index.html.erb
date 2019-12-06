@@ -1,0 +1,12 @@
+<h1>Courses</h1>
+
+<% @courses.each do |course| %>
+  <ul>
+    <section id="course-<%= course.id %>">
+      <li>
+        Name: <%= course.name %>
+        Students: <%= @course_info[course.id] %>
+      </li>
+    </section>
+  </ul>
+<% end %>
